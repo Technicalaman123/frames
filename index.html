@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souvenir Frame - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="index.html">Souvenir Frame</a></div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button id="searchButton">Search</button>
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <nav id="sideMenu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
+        <a href="index.html">Home</a>
+        <a href="#new">New Items</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <main class="container">
+        <h1 id="new" class="section-title">Newly Added Frames</h1>
+        
+        <div id="productGrid" class="product-grid"></div>
+
+        <h2 class="section-title">Categories</h2>
+        <div id="categoryLinks" class="category-list">
+             </div>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>For any queries or bulk orders, feel free to reach out to us!</p>
+            <p>Email: contact@souvenirframe.com | Phone: +91 8917694522</p>
+        </section>
+        </main>
+
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
